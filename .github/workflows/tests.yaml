@@ -22,8 +22,8 @@ jobs:
           distribution: 'corretto'
           java-version: '21'
       
-      - name: maven build
-        run: mvn -B package -file pom.xml
+      - name: maven compile
+        run: mvn -B compile -file pom.xml
 
       - name: run tests
         run: mvn test
